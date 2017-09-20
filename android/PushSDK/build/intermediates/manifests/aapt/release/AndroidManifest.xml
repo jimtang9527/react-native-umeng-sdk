@@ -4,6 +4,10 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
     <!-- 必选 -->
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -71,7 +75,7 @@
             android:name="com.umeng.message.RegistrationReceiver"
             android:exported="false" >
             <intent-filter>
-                <action android:name="${applicationId}.intent.action.COMMAND" />
+                <action android:name="dollar_openBracket_applicationId_closeBracket" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
@@ -86,10 +90,10 @@
             android:label="PushService"
             android:process=":push" >
             <intent-filter>
-                <action android:name="${applicationId}.intent.action.START" />
+                <action android:name="dollar_openBracket_applicationId_closeBracket" />
             </intent-filter>
             <intent-filter>
-                <action android:name="${applicationId}.intent.action.COCKROACH" />
+                <action android:name="dollar_openBracket_applicationId_closeBracket" />
             </intent-filter>
             <intent-filter>
                 <action android:name="org.agoo.android.intent.action.PING_V4" />
@@ -135,15 +139,16 @@
         <service
             android:name="com.umeng.message.local.UmengLocalNotificationService"
             android:exported="false" />
-        <receiver
-            android:name="com.umeng.message.NetworkReceiver" >
+
+        <receiver android:name="com.umeng.message.NetworkReceiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
         <service
             android:name="com.umeng.message.UmengLocationService"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
                 <action android:name="com.umeng.message.lbs.action" />
             </intent-filter>

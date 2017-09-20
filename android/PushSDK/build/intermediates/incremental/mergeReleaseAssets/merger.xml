@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/jim/code/rn-android/node_modules/react-native-umeng-sdk/android/PushSDK/assets"/><source path="/Users/jim/code/rn-android/node_modules/react-native-umeng-sdk/android/PushSDK/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/jim/code/rn-android/node_modules/react-native-umeng-sdk/android/PushSDK/build-types/release/assets"/></dataSet></merger>
